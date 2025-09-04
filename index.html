@@ -13,11 +13,11 @@
 
 <body>
     <!-- NAVBAR: choose and add a categories -->
-     <!-- data-category: funzionale per la gestione dinamica con JS delle categoria create dall'utente-->
+    <!-- data-category: funzionale per la gestione dinamica con JS delle categoria create dall'utente-->
     <nav class="navbar" id="navbar">
         <div class="category-wrapper">
             <button class="category-btn" data-category="shopping">
-          <i class="fa-solid fa-cart-shopping"></i> Spesa
+                <i class="fa-solid fa-cart-shopping"></i> Spesa
             </button>
         </div>
         <div class="category-wrapper">
@@ -36,9 +36,10 @@
 
     <!-- LISTS CONTAINER -->
     <div class="container">
-        <!-- DYNAMICS TO DO LISTS-->
-        <div id="lists"></div> <!-- to do tasks from js -->
-              <!-- delete icon for JS: <i class="fa-solid fa-trash-can"></i> -->
+        <h2> LISTA ATTIVITÀ </h2>
+        <input type="text" id="task-input" placeholder="Aggiungi attività">
+        <button id="add-task-btn">+</button>
+        <ul id="task-list"></ul>
     </div>
 
     <script src="script.js"></script>
