@@ -1,57 +1,13 @@
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8bec39b2df.js" crossorigin="anonymous"></script>
-    <title>To Do List</title>
-    <link href="./output.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- NAVBAR: choose and add a categories -->
-    <!-- data-category: funzionale per la gestione dinamica con JS delle categoria create dall'utente-->
-    <nav class="navbar" id="navbar">
-        <div class="category-wrapper">
-            <button class="category-btn" data-category="shopping">
-                <i class="fa-solid fa-cart-shopping"></i> Spesa
-            </button>
-        </div>
-        <div class="category-wrapper">
-            <button class="category-btn" data-category="commissions">
-                <i class="fa-solid fa-house"></i> Commissioni
-            </button>
-        </div>
-        <!-- e così via per le altre categorie -->
-        <div class="category-wrapper">
-            <button id="add-category">
-                <i class="fa-solid fa-plus"></i> Crea Categoria
-            </button>
-        </div>
-    </nav>
-
-
-    <!-- LISTS CONTAINER -->
-    <div class="container">
-        <h2> LISTA ATTIVITÀ </h2>
-        <input type="text" id="task-input" placeholder="Aggiungi attività">
-        <button id="add-task-btn">+</button>
-        <ul id="task-list"></ul>
-    </div>
-
-
-
-
-    <!-- DONE TASKS -->
-    <div class="container-list-done">
-        <h1>Attività completate</h1>
-        <div id="done-list">
-        </div> <!-- done tasks from js -->
-
-    </div>
-    <script src="script.js"></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
